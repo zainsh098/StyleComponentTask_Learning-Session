@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LearningSessionStyle</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="name_text_field">Name</string>
+    <string name="hint_text_email">Email</string>
+    <string name="hint_text_password">Password</string>
+    <string name="login_text">Login</string>
+    <string name="verification">Verification</string>
+    <string name="no">No</string>
+</resources>
