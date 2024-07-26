@@ -23,13 +23,13 @@
 
     <TextView
         android:id="@+id/textToolbar"
+        style="@style/text_style_toolbar"
+        android:text="Verification"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Vertification"
-        android:text="Verification"
 
-        style="@style/text_style_toolbar" />
+        tools:text="Vertification" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
