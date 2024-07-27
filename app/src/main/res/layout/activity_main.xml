@@ -32,9 +32,9 @@
         style="@style/button_style_login"
         android:layout_width="match_parent"
         android:layout_marginEnd="@dimen/_20sdp"
-        android:layout_marginBottom="@dimen/_20sdp"
-        android:background="@drawable/button_round_login"
+        android:layout_marginBottom="28dp"
         android:text="@string/login"
+        app:srcCompat="@drawable/button_round_login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
