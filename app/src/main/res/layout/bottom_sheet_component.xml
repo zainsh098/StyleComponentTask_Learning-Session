@@ -5,78 +5,51 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-
     <TextView
         android:id="@+id/textView"
-
+        style="@style/bottom_sheet_text_style"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Are u sure want to delete"
-        style="@style/bottom_sheet_text_style" />
+        tools:text="Are you sure you want to delete" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textSize="16sp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="@dimen/_16ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:text="Are u sure do you wanna\n to remove this budget" />
+        tools:text="Are you sure you want to\n\t\tremove this budget" />
 
     <LinearLayout
-
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintEnd_toEndOf="@+id/button_signUp1"
-            app:layout_constraintStart_toEndOf="@+id/button_signUp1">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_signUp1"
+            style="@style/button_style_login"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/button_round_login"
+            android:text="@string/no"
+            android:textColor="@color/Violet_100" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button_signUp"
-
-                style="@style/button_style"
-                android:layout_width="164dp"
-                android:layout_height="56dp"
-
-
-                android:layout_marginEnd="24dp"
-                android:text="@string/yes"
-                app:layout_constraintBaseline_toBaselineOf="@+id/button_signUp1"
-                app:layout_constraintEnd_toEndOf="parent">
-
-
-            </androidx.appcompat.widget.AppCompatButton>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button_signUp1"
-
-                style="@style/button_style"
-                android:layout_width="164dp"
-                android:layout_height="56dp"
-
-                android:layout_marginTop="153dp"
-
-                android:background="@drawable/button_round_login"
-                android:text="@string/no"
-
-                android:textColor="@color/Violet_100"
-                app:layout_constraintEnd_toStartOf="@+id/button_signUp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-
-            </androidx.appcompat.widget.AppCompatButton>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_Yes"
+            style="@style/button_style"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:text="@string/yes" />
 
     </LinearLayout>
 

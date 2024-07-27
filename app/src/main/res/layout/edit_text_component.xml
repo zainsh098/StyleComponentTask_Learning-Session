@@ -1,55 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/textFieldEmail"
-
         style="@style/text_edit"
-        android:layout_marginEnd="16dp"
-
-        android:layout_marginTop="210dp"
-
+        android:layout_marginTop="@dimen/_180sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
         android:hint="@string/hint_text_email"
-
         android:textColorHint="@color/Light_20"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
         android:hint="@string/hint_text_password"
-        android:layout_marginTop="10dp"
-        app:passwordToggleEnabled="true"
         android:textColorHint="@color/Light_20"
-
         app:layout_constraintTop_toBottomOf="@id/textFieldEmail"
-        >
-
-
+        app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textFieldPassword"
-
             style="@style/text_edit"
-
-
-            android:layout_marginEnd="16dp"
-
+            android:layout_marginEnd="@dimen/_16sdp"
             app:hintTextColor="@color/Light_20"
-
-
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="345dp" />
+            app:layout_constraintStart_toStartOf="parent" />
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
